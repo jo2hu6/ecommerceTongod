@@ -3,7 +3,7 @@
 <div class="border-bottom pt-5 mt-2 mb-5">
     <h1 class="mt-2 mt-md-4 mb-3 pt-5">Cupones</h1>
     <div class="d-flex flex-wrap flex-md-nowrap justify-content-between">
-        <p class="text-muted">Este módulo lista todos los cupones de la tienda.</p>
+        <p class="text-muted">En este módulo puedes actulizar los datos de un cupón.</p>
 
     </div>
 </div>
@@ -35,7 +35,7 @@
             </div>
         </div>
     </ng-container>
-    
+
     <ng-container *ngIf="cupon != undefined">
         <form #actualizaForm="ngForm" (ngSubmit)="actualizar(actualizaForm)">
             <div class="card box-shadow-sm">
@@ -46,10 +46,9 @@
                     <div class="row">
                         <div class="col-lg-3 col-md-6 form-group">
                             <label for="validationCustom01" class="form-label">Código de cupón</label>
-                            <input class="form-control" type="text" placeholder="Código de cupón" required name="codigo"
-                                [(ngModel)]="cupon.codigo">
+                            <input class="form-control" type="text" placeholder="Código de cupón" required name="codigo" [(ngModel)]="cupon.codigo">
                         </div>
-        
+
                         <div class="col-lg-3 col-md-6">
                             <label for="validationCustom01" class="form-label">Tipo</label>
                             <select class="form-control custom-select" required name="tipo" [(ngModel)]="cupon.tipo">
@@ -60,13 +59,11 @@
                         </div>
                         <div class="col-lg-3 col-md-6 form-group">
                             <label for="validationCustom01" class="form-label">Valor</label>
-                            <input class="form-control" type="number" placeholder="Valor del descuento" required name="valor"
-                                [(ngModel)]="cupon.valor">
+                            <input class="form-control" type="number" placeholder="Valor del descuento" required name="valor" [(ngModel)]="cupon.valor">
                         </div>
                         <div class="col-lg-3 col-md-6 form-group">
                             <label for="validationCustom01" class="form-label">Límite</label>
-                            <input class="form-control" type="number" placeholder="Límite máximo" required name="limite"
-                                [(ngModel)]="cupon.limite">
+                            <input class="form-control" type="number" placeholder="Límite máximo" required name="limite" [(ngModel)]="cupon.limite">
                         </div>
                     </div>
                 </div>
@@ -82,5 +79,3 @@
         </form>
     </ng-container>
 </ng-container>
-
-

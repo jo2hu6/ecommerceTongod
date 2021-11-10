@@ -2,8 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AdminService } from 'src/app/services/admin.service';
 
-declare var jquery:any;
-declare var $:any;
 declare var iziToast:any;
 
 @Component({
